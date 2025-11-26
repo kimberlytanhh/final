@@ -31,7 +31,7 @@ body{
     z-index: 10;
 
     /* iOS compatible mask */
-    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50 15 C35 0 0 10 0 40 C0 70 25 90 50 100 C75 90 100 70 100 40 C100 10 65 0 50 15 Z" fill=%22black%22/></svg>');
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50 92 C30 82 8 64 8 44 C8 28 24 16 40 18 C46 19 50 26 50 26 C50 26 54 19 60 18 C76 16 92 28 92 44 C92 64 70 82 50 92 Z" fill=%22black%22/></svg>');
     -webkit-mask-size: 100% 100%;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;

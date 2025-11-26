@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kiss Cam</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -30,13 +30,15 @@
     <!-- Hidden video -->
     <video id="video" playsinline style="display:none;"></video>
 
-    <div id="devControls">
-      <select id="rotationSelect">
-        <option value="0">0°</option>
-        <option value="-90">-90°</option>
-      </select>
-    </div>
+  </div> <!-- /#app -->
 
+  <!-- Dev controls: MOVED OUTSIDE #app so they never get rotated with the camera -->
+  <div id="devControls" aria-label="Developer controls">
+    <label for="rotationSelect" class="sr-only">Rotation</label>
+    <select id="rotationSelect">
+      <option value="0">0°</option>
+      <option value="-90">-90°</option>
+    </select>
   </div>
 
   <script src="script.js?v=1001"></script>

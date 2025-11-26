@@ -22,10 +22,10 @@ body{
 #cameraHeart{
   position:absolute;
   left:50%;
-  
+  top:60%
   transform:translate(-50%,-50%);
-  width:400px;
-  height:200px;
+  width:170vh;
+  height:80vh;
   overflow:hidden;
   z-index:10;
 

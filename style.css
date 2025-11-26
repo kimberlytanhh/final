@@ -18,29 +18,32 @@ body{
   font-size:4vh;z-index:60;
 }
 
-/* ❤️ HEART CAMERA */
+/* ❤️ HEART CAMERA (FULLY FIXED FOR SAFARI & IOS) */
 #cameraHeart {
     position: absolute;
     left: 50%;
     top: 45%;
     transform: translate(-50%, -50%);
-    width: 50vw;                /* responsive but not too tall */
-    aspect-ratio: 1 / 1;        /* ❤️ keeps heart shape perfect */
+    width: 50vw;
+    max-width: 600px;
+    aspect-ratio: 1 / 1;
     overflow: hidden;
     z-index: 10;
 
-    -webkit-clip-path: path("M50 15
-        C35 0, 0 10, 0 40
-        C0 70, 25 90, 50 100
-        C75 90, 100 70, 100 40
-        C100 10, 65 0, 50 15 Z");
-    clip-path: path("M50 15
-        C35 0, 0 10, 0 40
-        C0 70, 25 90, 50 100
-        C75 90, 100 70, 100 40
-        C100 10, 65 0, 50 15 Z");
+    /* iOS compatible mask */
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50 15 C35 0 0 10 0 40 C0 70 25 90 50 100 C75 90 100 70 100 40 C100 10 65 0 50 15 Z" fill=%22black%22/></svg>');
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+
+    /* desktop fallback */
+    mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50 15 C35 0 0 10 0 40 C0 70 25 90 50 100 C75 90 100 70 100 40 C100 10 65 0 50 15 Z" fill=%22black%22/></svg>');
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    mask-position: center;
 }
 
+/* camera */
 #cameraCanvas{
   width:100%;
   height:100%;
@@ -59,4 +62,17 @@ body{
 #controls button.right{background:#c1121f}
 
 #particles{position:absolute;inset:0;pointer-events:none;z-index:55}
-#devControls{position:absolute;top:2vh;right:2vw;z-index:80;opacity:0.001}
+
+/* 🔧 DEV CONTROLS (FIXED, VISIBLE, DO NOT ROTATE) */
+#devControls{
+  position: fixed;       /* must be fixed to avoid rotating */
+  top: 2vh;
+  right: 2vw;
+  z-index: 9999;
+  opacity: 1;            /* make visible again */
+  background: rgba(255,255,255,0.9);
+  color: black;
+  padding: 6px 8px;
+  border-radius: 8px;
+  font-size: 14px;
+}

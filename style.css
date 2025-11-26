@@ -19,18 +19,18 @@ body{
 }
 
 /* ❤️ HEART CAMERA */
-#cameraHeart{
-  position:absolute;
-  left:50%;
-  top:60%
-  transform:translate(-50%,-50%);
-  width:170vh;
-  height:80vh;
-  overflow:hidden;
-  z-index:10;
+#cameraHeart {
+    position: absolute;
+    left: 50%;
+    top: 45%;                     /* Move higher so it's centered */
+    transform: translate(-50%, -50%);
+    width: 60vh;                  /* Much better size */
+    height: 55vh;                 /* Keeps shape */
+    overflow: hidden;
+    z-index: 10;
 
-  -webkit-clip-path:path("M50 82 L45 78 C20 58 5 40 5 25 C5 12 17 5 30 12 C38 17 43 24 50 30 C57 24 62 17 70 12 C83 5 95 12 95 25 C95 40 80 58 55 78 L50 82 Z");
-  clip-path:path("M50 82 L45 78 C20 58 5 40 5 25 C5 12 17 5 30 12 C38 17 43 24 50 30 C57 24 62 17 70 12 C83 5 95 12 95 25 C95 40 80 58 55 78 L50 82 Z");
+    -webkit-clip-path: path("M50 82 L45 78 C20 58 5 40 5 20 C5 10 12 2 22 2 C29 2 34 6 38 12 C42 6 47 2 54 2 C64 2 71 10 71 20 C71 40 56 58 31 78 Z");
+    clip-path: path("M50 82 L45 78 C20 58 5 40 5 20 C5 10 12 2 22 2 C29 2 34 6 38 12 C42 6 47 2 54 2 C64 2 71 10 71 20 C71 40 56 58 31 78 Z");
 }
 
 #cameraCanvas{

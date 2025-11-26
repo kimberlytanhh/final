@@ -21,7 +21,7 @@ body{
   left: 50%;
   transform: translateX(-50%);
   background: black;
-  padding: 8px 18px;
+  padding: 12px 24px;
   border-radius: 0 0 14px 14px;
   display: flex;
   align-items: center;
@@ -38,7 +38,7 @@ body{
 
 #kissBanner .bannerText {
   color: white;
-  font-size: 3.4vh;
+  font-size: 3.8vh;
   font-weight: 700;
 }
 

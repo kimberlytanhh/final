@@ -24,8 +24,8 @@ body{
   left:50%;
   top:60%;
   transform:translate(-50%,-50%);
-  width:170vh;
-  height:80vh;
+  width:170vw;
+  height:80vw;
   overflow:hidden;
   z-index:10;
 

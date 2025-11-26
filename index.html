@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiss Cam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="app">
+
+    <div id="kisscamText">KISS CAM</div>
+    <div id="message">Who shall be the lucky couple?</div>
+
+    <!-- HEART CAMERA -->
+    <div id="cameraHeart">
+      <canvas id="cameraCanvas"></canvas>
+    </div>
+
+    <!-- BUTTONS -->
+    <div id="controls">
+      <button id="searchBtn">Searching</button>
+      <button id="kissBtn" class="right">Kiss!</button>
+    </div>
+
+    <!-- PARTICLES -->
+    <div id="particles"></div>
+
+    <!-- Hidden video -->
+    <video id="video" playsinline style="display:none;"></video>
+
+    <div id="devControls">
+      <select id="rotationSelect">
+        <option value="0">0°</option>
+        <option value="-90">-90°</option>
+      </select>
+    </div>
+
+  </div>
+
+  <script src="script.js?v=1001"></script>
+</body>
+</html>
